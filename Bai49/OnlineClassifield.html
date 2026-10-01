@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Online Classifield</title>
+        <style>
+            form {
+                width: fit-content;
+                margin: 0 auto;
+                line-height: 2.0;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body style="background-color: #add9ff;">
+        <h1 style="color: red; text-align: center;">Online Classifield Search Form</h1>
+        <hr/>
+        <form>
+            <ol>
+                <li> <b>Search for a classified in the following section:</b>
+                    <table>
+                        <tr>
+                            <td><input type="radio" name="section" value="Employment"/> Employment</td>
+                            <td><input type="radio" name="section" value="Personal"/> Personal</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="section" value="For Sale"/> For Sale</td>
+                            <td><input type="radio" name="section" value="Miscellaneous"/> Miscellaneous</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="section" value="Housing"/> Housing</td>
+                            <td><input type="radio" name="section" value="all"/> All off the above</td>
+                        </tr>
+                    </table>
+                </li>
+
+                <li> <b>Search the following publications:</b>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="publication" value="Midwest Times"/>Midwest Times
+                            </td>
+                            <td>
+                                <input type="checkbox" name="publication" value="Morden News"/>Morden News
+                            </td>
+                            <td>
+                                <input type="checkbox" name="publication" value="Employment Today"/>Employment Today
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="publication" value="Great Lakes Classified"/>Great Lakes Classified
+                            </td>
+                            <td>
+                                <input type="checkbox" name="publication" value="Middleton Daily"/>Middleton Daily
+                            </td>
+                            <td>
+                                <input type="checkbox" name="publication" value="Cashtown Daily News"/>Cashtown Daily News
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li> <b>From to </b><input type="date" name="fromdate"> to <input type="date" name="todate"></li>
+                <li> <b>Enter a few keywords to describe the classified:</b><br/>
+                    <div><textarea name="Comments" id="Comments" rows="1" cols="60"></textarea></div>
+                </li>
+                <li><b>Click one of the options below:</b>
+                    <table>
+                        <tr>
+                            <td>
+                                <button type="button" onclick="alert('Search')"><img src="icon/Search.gif" alt="Search"></button>
+                            </td>
+                            <td>
+                                <button type="button" onclick="window.open('https://tranduythanh.com', '_blank')"><img src="icon/Help.gif" alt="Help"></button>
+                            </td>
+                            <td>
+                                <button type="reset"><img src="icon/Cancel.gif" alt="Cancel"></button>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+        </form>
+    </body>
+</html>
